@@ -1,6 +1,9 @@
 # Using-the-glob-module
 This repository explains how to use the Glob standard library module to produce a list of pathnames that match a specific file extension pattern.
 
+#Question
+How can I easily go through thousands of files that exist in sub-folders of a directory?
+
 #About glob
 glob is a module from the Python standard library that provides a means for searching through sub-folders of a directory and only using the files that are needed. In the case of having a directory with sub-folders full of files with different Unix shell extensions (such as mp3, text, py), a list of all the mp3 file names in the directory could be produced by passing glob the ".mp3" pattern. This module serves to be very useful as it eliminates the need to move files around, and generates a list of all the files needed by a given script. As a result whenever the data in those files needs to be used, all the files will be acessible via traversing the list of filenames as opposed to having to walk the tree of files from the root and pass over files that are not needed. In this way the glob module greatly increases the performance of a script by making it to where the entire tree of files in sub-folders of a directory only needs to be traversed once as opposed to needing to be traversed with multiple times.
 
